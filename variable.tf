@@ -8,3 +8,14 @@ variable "aws_secret_key" {
   type        = string
   description = "AWS secret key used to create AWS infrastructure"
 }
+variable "aws_region" {
+  type        = string
+  description = "AWS region used for all resources"
+  default     = "us-east-1"
+}
+
+variable "aws_zone" {
+  type        = string
+  description = "AWS zone used for all resources"
+  default     = "us-east-1b"
+}
